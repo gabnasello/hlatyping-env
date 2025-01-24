@@ -1,0 +1,9 @@
+services:
+  hlatyping-env:
+    image: gnasello/hlatyping-env:2025-01-24
+    container_name: hlatyping-env
+    ports:
+      - 8542:8888
+    environment:
+    - GRANT_SUDO=yes
+    user: root

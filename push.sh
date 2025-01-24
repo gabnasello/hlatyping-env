@@ -1,0 +1,11 @@
+#!/bin/bash
+
+DOCKERHUB_USER="gnasello"
+CONTAINER_NAME="hlatyping-env"
+VERSION='2025-01-24'
+
+docker push "${DOCKERHUB_USER}/${CONTAINER_NAME}:${VERSION}"
+
+docker tag "${DOCKERHUB_USER}/${CONTAINER_NAME}:${VERSION}" "${DOCKERHUB_USER}/${CONTAINER_NAME}:latest" 
+
+docker push "${DOCKERHUB_USER}/${CONTAINER_NAME}:latest"
