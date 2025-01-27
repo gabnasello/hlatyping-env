@@ -7,5 +7,9 @@ services:
     #volumes:
     #  - /local/path:/home/jovyan/researcher_home
     environment:
-    - GRANT_SUDO=yes
+    #  - NB_UID=1000
+    #  - NB_GID=100
+    #  - CHOWN_HOME=yes
+    #  - CHOWN_HOME_OPTS=-R
+      - GRANT_SUDO=yes
     user: root
